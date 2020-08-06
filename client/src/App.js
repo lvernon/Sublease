@@ -83,7 +83,7 @@ const DefaultContainer = (props) => {
       <Route path="/SignUp" render={(props) => <SignUp {...props} onLoginSuccess={onLoginSuccess} />}  /> {/* onLoginSuccess={props.onLoginSuccess()} currentUser={props.currentUser} setCurrentUser={props.setCurrentUser}*/}
       <Route path="/LogOut" render={(props) => <LogOut {...props} logOut={logOut} />} /> {/*currentUser={props.currentUser} setCurrentUser={props.setCurrentUser}*/}
       <Route path="/Negotiation" render={(props) => <Negotiation {...props}  />} /> {/*currentUser={props.currentUser} setCurrentUser={props.setCurrentUser}*/}
-
+ 
       <Route exact path="/">
         <Redirect to="/Home" />
       </Route>

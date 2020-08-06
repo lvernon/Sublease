@@ -14,7 +14,6 @@ function NavigationPage(props) {
 
     return (
         <div id="navigation-page-container">
-            <NavBar option={option}/>
             <Switch>
                 <Route exact path="/Navigation/GeneralInformaiton" component={GeneralInformaiton}/>
                 <Route exact path="/Navigation/Parking" component={ParkingDirections}/>
