@@ -11,6 +11,7 @@ const HomeCarousel = (props) => {
         <div id="home-container">
             <PatientCare /> 
             <ExploreDpt />
+            <ExploreDpt /> 
         </div>
     );
 }

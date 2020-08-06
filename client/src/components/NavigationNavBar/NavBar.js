@@ -24,6 +24,14 @@ const NavBar = (props) => {
                     <Nav.Link href='/Navigation/Hospital' className = "nav-menu-item" eventKey={'Hospital'}>
                         Navigate Me to Hospital
                     </Nav.Link>
+
+                    <Nav.Link href='/Navigation/Hospital' className = "nav-menu-item" eventKey={'Hospital'}>
+                        Navigate Me to Hospital
+                    </Nav.Link>
+
+                    <Nav.Link href='/Navigation/Hospital' className = "nav-menu-item" eventKey={'Hospital'}>
+                        Navigate Me to Hospital
+                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

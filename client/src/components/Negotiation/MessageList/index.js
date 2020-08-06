@@ -63,7 +63,7 @@ let ID = listing.listCompId;
       axios.get('/sell/list', {}).then(function(response){
          msgsA= (response.data);
          msgsA.map(result => {
-          console.log(result.data.name);
+          // console.log(result.data.name);
 
           /* { id: result.data.listCompId,
            author: result.data.name,

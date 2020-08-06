@@ -1,5 +1,6 @@
 import React from 'react'
 import './GeneralInformation.css'
+import { CardDeck, Card, Button } from 'react-bootstrap'
 
 /*
     General information section on the navigation page. Displays static information about
@@ -8,7 +9,233 @@ import './GeneralInformation.css'
 function GeneralInformation(props) {
     return (
         <div id="general-info-container">
-            <h1 id="navigation-info-header">General Information</h1>
+
+                <Card>
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                    <Card.Body>
+                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Text>
+                            <h3>Patient Care</h3>
+                            {/* <p>
+                                The physicians of the clinical faculty of the Department of Neurosurgery at the 
+                                University of Florida provide outstanding care for patients with neurological 
+                                illness via a team approach.
+                            </p> */}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <a href="https://neurosurgery.ufl.edu/patient-care/diseases-conditions/" title="Make an Appointment" class="FancyLink td-n clickable ba-0 FancyLink--blue-light fs-14 fs-16--md ff-gm">
+                            <span class="FancyLink__Text">Look-up an Adult Disease or Condition </span>
+                        </a>
+                    </Card.Footer>
+                </Card>
+
+
+                <Card>
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                    <Card.Body>
+                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Text>
+                            <h3>Patient Care</h3>
+                            {/* <p>
+                                The physicians of the clinical faculty of the Department of Neurosurgery at the 
+                                University of Florida provide outstanding care for patients with neurological 
+                                illness via a team approach.
+                            </p> */}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <a href="https://neurosurgery.ufl.edu/patient-care/diseases-conditions/" title="Make an Appointment" class="FancyLink td-n clickable ba-0 FancyLink--blue-light fs-14 fs-16--md ff-gm">
+                            <span class="FancyLink__Text">Look-up an Adult Disease or Condition </span>
+                        </a>
+                    </Card.Footer>
+                </Card>
+
+
+                <Card>
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                    <Card.Body>
+                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Text>
+                            <h3>Patient Care</h3>
+                            {/* <p>
+                                The physicians of the clinical faculty of the Department of Neurosurgery at the 
+                                University of Florida provide outstanding care for patients with neurological 
+                                illness via a team approach.
+                            </p> */}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <a href="https://neurosurgery.ufl.edu/patient-care/diseases-conditions/" title="Make an Appointment" class="FancyLink td-n clickable ba-0 FancyLink--blue-light fs-14 fs-16--md ff-gm">
+                            <span class="FancyLink__Text">Look-up an Adult Disease or Condition </span>
+                        </a>
+                    </Card.Footer>
+                </Card>
+
+                <Card>
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                    <Card.Body>
+                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Text>
+                            <h3>Patient Care</h3>
+                            {/* <p>
+                                The physicians of the clinical faculty of the Department of Neurosurgery at the 
+                                University of Florida provide outstanding care for patients with neurological 
+                                illness via a team approach.
+                            </p> */}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <a href="https://neurosurgery.ufl.edu/patient-care/diseases-conditions/" title="Make an Appointment" class="FancyLink td-n clickable ba-0 FancyLink--blue-light fs-14 fs-16--md ff-gm">
+                            <span class="FancyLink__Text">Look-up an Adult Disease or Condition </span>
+                        </a>
+                    </Card.Footer>
+                </Card>
+
+
+                <Card>
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                    <Card.Body>
+                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Text>
+                            <h3>Patient Care</h3>
+                            {/* <p>
+                                The physicians of the clinical faculty of the Department of Neurosurgery at the 
+                                University of Florida provide outstanding care for patients with neurological 
+                                illness via a team approach.
+                            </p> */}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <a href="https://neurosurgery.ufl.edu/patient-care/diseases-conditions/" title="Make an Appointment" class="FancyLink td-n clickable ba-0 FancyLink--blue-light fs-14 fs-16--md ff-gm">
+                            <span class="FancyLink__Text">Look-up an Adult Disease or Condition </span>
+                        </a>
+                    </Card.Footer>
+                </Card>
+
+                <Card>
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                    <Card.Body>
+                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Text>
+                            <h3>Patient Care</h3>
+                            {/* <p>
+                                The physicians of the clinical faculty of the Department of Neurosurgery at the 
+                                University of Florida provide outstanding care for patients with neurological 
+                                illness via a team approach.
+                            </p> */}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <a href="https://neurosurgery.ufl.edu/patient-care/diseases-conditions/" title="Make an Appointment" class="FancyLink td-n clickable ba-0 FancyLink--blue-light fs-14 fs-16--md ff-gm">
+                            <span class="FancyLink__Text">Look-up an Adult Disease or Condition </span>
+                        </a>
+                    </Card.Footer>
+                </Card>
+
+                <Card>
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                    <Card.Body>
+                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Text>
+                            <h3>Patient Care</h3>
+                            {/* <p>
+                                The physicians of the clinical faculty of the Department of Neurosurgery at the 
+                                University of Florida provide outstanding care for patients with neurological 
+                                illness via a team approach.
+                            </p> */}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <a href="https://neurosurgery.ufl.edu/patient-care/diseases-conditions/" title="Make an Appointment" class="FancyLink td-n clickable ba-0 FancyLink--blue-light fs-14 fs-16--md ff-gm">
+                            <span class="FancyLink__Text">Look-up an Adult Disease or Condition </span>
+                        </a>
+                    </Card.Footer>
+                </Card>
+
+                <Card>
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                    <Card.Body>
+                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Text>
+                            <h3>Patient Care</h3>
+                            {/* <p>
+                                The physicians of the clinical faculty of the Department of Neurosurgery at the 
+                                University of Florida provide outstanding care for patients with neurological 
+                                illness via a team approach.
+                            </p> */}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <a href="https://neurosurgery.ufl.edu/patient-care/diseases-conditions/" title="Make an Appointment" class="FancyLink td-n clickable ba-0 FancyLink--blue-light fs-14 fs-16--md ff-gm">
+                            <span class="FancyLink__Text">Look-up an Adult Disease or Condition </span>
+                        </a>
+                    </Card.Footer>
+                </Card>
+
+                <Card>
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                    <Card.Body>
+                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Text>
+                            <h3>Patient Care</h3>
+                            {/* <p>
+                                The physicians of the clinical faculty of the Department of Neurosurgery at the 
+                                University of Florida provide outstanding care for patients with neurological 
+                                illness via a team approach.
+                            </p> */}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <a href="https://neurosurgery.ufl.edu/patient-care/diseases-conditions/" title="Make an Appointment" class="FancyLink td-n clickable ba-0 FancyLink--blue-light fs-14 fs-16--md ff-gm">
+                            <span class="FancyLink__Text">Look-up an Adult Disease or Condition </span>
+                        </a>
+                    </Card.Footer>
+                </Card>
+
+                <Card>
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                    <Card.Body>
+                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Text>
+                            <h3>Patient Care</h3>
+                            {/* <p>
+                                The physicians of the clinical faculty of the Department of Neurosurgery at the 
+                                University of Florida provide outstanding care for patients with neurological 
+                                illness via a team approach.
+                            </p> */}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <a href="https://neurosurgery.ufl.edu/patient-care/diseases-conditions/" title="Make an Appointment" class="FancyLink td-n clickable ba-0 FancyLink--blue-light fs-14 fs-16--md ff-gm">
+                            <span class="FancyLink__Text">Look-up an Adult Disease or Condition </span>
+                        </a>
+                    </Card.Footer>
+                </Card>
+
+
+                <Card>
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                    <Card.Body>
+                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Text>
+                            <h3>Patient Care</h3>
+                            {/* <p>
+                                The physicians of the clinical faculty of the Department of Neurosurgery at the 
+                                University of Florida provide outstanding care for patients with neurological 
+                                illness via a team approach.
+                            </p> */}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <a href="https://neurosurgery.ufl.edu/patient-care/diseases-conditions/" title="Make an Appointment" class="FancyLink td-n clickable ba-0 FancyLink--blue-light fs-14 fs-16--md ff-gm">
+                            <span class="FancyLink__Text">Look-up an Adult Disease or Condition </span>
+                        </a>
+                    </Card.Footer>
+                </Card>
+                
+
+            {/* <h1 id="navigation-info-header">General Information</h1>
             <div className="navigation-section starter-section">
                 <h2 className="navigation-section-header">Address</h2>
                 <p>
@@ -46,7 +273,7 @@ function GeneralInformation(props) {
                     <li>Please be advised that parking is cash only.</li>
                     <li>If patients or visitors do not wish to valet, a 600-space parking garage is available adjacent to the hospital. A covered walkway from the garage leads into the lobby of the building.</li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     );
 }
