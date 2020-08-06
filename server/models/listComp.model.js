@@ -12,14 +12,12 @@ const listCompSchema = new mongoose.Schema({
     utilitiesIncluded:{type:Boolean},
     washerDryer:{type:Boolean},
     deposit: {type: Number},
-    parkingFee: {type: Number},
     leaseTransferFee: {type: Number},
     applicationFee: {type: Number},
     applicationDiscount: {type: Number},
     depositDiscount: {type: Number},
-    parkingFeeDiscount: {type: Number},
     giftCard: {type: Number},
 });
 
 
-module.exports = mongoose.model('listCDB', listCompSchema);
+module.exports = mongoose.model('listCDB', listCompSchema, 'listingsCompany');

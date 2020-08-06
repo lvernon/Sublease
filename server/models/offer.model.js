@@ -1,17 +1,18 @@
 const mongoose = require('mongoose');
 
 const offerSchema = new mongoose.Schema({
-    offerId: {type: Number},
-    rentDiscount: {type: Number},
-    sellerName:{type:String},
-    buyerName:{type:String},
-    applicationFeeDiscount: {type: Number},
-    leaseTransferFeeDiscount: {type: Number},
-    monthsFree: {type: Number},
-    parkingFeeDiscount: {type: Number},
-    accepted:{type:Boolean},
-    utilitiesCovered:{type:Boolean}
+    offerId:  Number,
+    listSellId:  Number,
+    listCompId:  Number,
+    name:String,
+    rentPerMonth:  Number,
+    deposit:  Number,
+    leaseTransferFee:  Number,
+    applicationFee:  Number,
+    monthsFree:  Number,
+    utilitiesIncluded:Boolean,
+    accepted:Boolean
 });
 
 
-module.exports = mongoose.model('offerDB', offerSchema);
+module.exports = mongoose.model('offerDB', offerSchema, 'offer');

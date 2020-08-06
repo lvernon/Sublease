@@ -7,7 +7,8 @@ const Router = express.Router();
 
 
 Router.get('/list', listCDb.listComp); 
-Router.get('/fetch', listCDb.fetchComp); 
+Router.post('/create', listCDb.newComp); 
+Router.post('/list/byId', listCDb.listById); 
 
 
 module.exports = Router

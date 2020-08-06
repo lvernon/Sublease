@@ -19,8 +19,8 @@ mainRouter.use('/patient', patientDbRouter)
 mainRouter.use('/appt', apptDbRouter)
 mainRouter.use('/reminder', remDbRouter)
 mainRouter.use('/remapi', remApiRouter)
-mainRouter.use('/comp', listSDbRouter)
-mainRouter.use('/sell', listCDbRouter)
+mainRouter.use('/sell', listSDbRouter)
+mainRouter.use('/comp', listCDbRouter)
 mainRouter.use('/offer', offerDbRouter)
 
 

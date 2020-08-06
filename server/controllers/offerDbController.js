@@ -4,43 +4,60 @@ const mongoose = require('mongoose')
 const { UsageRecordInstance } = require('twilio/lib/rest/supersim/v1/usageRecord')
 
 
-exports.fetchOffer = function(req, res){
+/*exports.fetchOffer = function(req, res){
 	offer.findOne({ 'listSellId' : req}, function(err, data){
 		if (err) res.status(200).send("NaN");
 		else res.status(200).json({
             offerId: usra.offerId,
-            rentDiscount: usra.rentDiscount,
             sellerName:usra.sellerName,
             buyerName:usra.buyerName,
-            applicationFeeDiscount: usra.applicationFeeDiscount,
-            leaseTransferFeeDiscount: usra.leaseTransferFeeDiscount,
+            rentPerMonth: usra.rentPerMonth,
+            utilitiesIncluded:usra.utilitiesIncluded,
+            deposit: usra.deposit,
+            leaseTransferFee: usra.leaseTransferFee,
+            applicationFee:usra.applicationFee,
             monthsFree: usra.monthsFree,
-            parkingFeeDiscount: usra.parkingFeeDiscount,
             accepted:usra.accepted,
-            utilitiesCovered:usra.utilitiesCovered
 		})
 	})
-}
-
-
+}*/
 
 exports.listOffer = function (req, res) {
-    /* Add your code. Make sure to send the documents as a JSON response.*/
-    offer.find({}, function(err, obj) {
-      if (err) {
-		if (err) res.status(200).send("NaN");
-      } else {
-		res.json(obj);
-		console.log(obj)
-      }
-    }); 
-
+   /* Add your code. Make sure to send the documents as a JSON response.*/
+   offer.find({}, function(err, obj) {
+     if (err) {
+     if (err) res.status(200).send("NaN");
+     } else {
+     res.json(obj);
+     // console.log(obj)
+     }
+   }); 
+};
+exports.listById = function (req, res) {
+   offer.find({ 'listSellId' : req.body.listingId}, function(err, obj) {
+     if (err) {
+     if (err) res.status(200).send("NaN");
+     } else {
+     res.json(obj);
+     }
+   }); 
 };
 
-exports.editOffer = function(req, res){
-	appt.updateOne({ 'offerId' : req.offerId}, {'rentDiscount' : req.rentDiscount, 'applicationFeeDiscount' : req.applicationFeeDiscount, 'leaseTransferFeeDiscount' : req.leaseTransferFeeDiscount, 'monthsFree' : req.monthsFree, 'parkingFeeDiscount' : req.parkingFeeDiscount, 'utilitiesCovered' : req.utilitiesCovered}, function(err, usra){
-		if (err) res.status(200).send("NaN");
-		else res.status(200).send("Successful update");
-	})
+exports.newOffer = async (req, res) => {
+   console.log("in rem controller!");
+   offer.create({
+      offerId: req.body.rentPerMonth, //remember to increment front end
+      listSellId: req.body.listSellId, 
+      listCompId: req.body.listCompId, 
+      rentPerMonth : req.body.rentPerMonth, 
+      deposit : req.body.deposit, 
+      leaseTransferFee : req.body.leaseTransferFee, 
+      leaseTransferFee : req.body.monthsFree, 
+      leaseTransferFee : req.body.applicationFee, 
+      leaseTransferFee : req.body.utilitiesCovered
+   }, function(err, pt){
+     res.status(200).send("Success");
+  });
 }
+
 

@@ -14,6 +14,7 @@ import httpUser from './httpUser'
 import ForgotPass from './views/ForgotPassword/ForgotPass';
 import ResetPass from './views/ResetPassword/ResetPass';
 import './App.css'
+import Negotiation from './views/NegotiationPage/NegotiationPage';
 
 /*
   Checks for the homepage route first. If not routing to home, sends to DefaultContainer.
@@ -81,6 +82,8 @@ const DefaultContainer = (props) => {
       <Route path="/SignIn" render={(props) => <SignIn {...props} onLoginSuccess={onLoginSuccess} />}  /> {/*currentUser={props.currentUser} setCurrentUser={props.setCurrentUser}*/}
       <Route path="/SignUp" render={(props) => <SignUp {...props} onLoginSuccess={onLoginSuccess} />}  /> {/* onLoginSuccess={props.onLoginSuccess()} currentUser={props.currentUser} setCurrentUser={props.setCurrentUser}*/}
       <Route path="/LogOut" render={(props) => <LogOut {...props} logOut={logOut} />} /> {/*currentUser={props.currentUser} setCurrentUser={props.setCurrentUser}*/}
+      <Route path="/Negotiation" render={(props) => <Negotiation {...props}  />} /> {/*currentUser={props.currentUser} setCurrentUser={props.setCurrentUser}*/}
+
       <Route exact path="/">
         <Redirect to="/Home" />
       </Route>

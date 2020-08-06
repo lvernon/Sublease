@@ -24,6 +24,7 @@ const NavBar = (props) => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="w-100 dual-collapse2">
                     <Nav className="mr-auto">
+                        <Nav.Link className = "nav-item main" href='/Negotiation'>Negotiation</Nav.Link>
                         <Nav.Link className = "nav-item main" href='/Home'>Home</Nav.Link>
                         {(props.currentUser && !props.isAdmin) &&
                             <Nav.Link className = "nav-item main" href='/MyAppointments'>Appointments</Nav.Link>

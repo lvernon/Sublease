@@ -7,7 +7,8 @@ const Router = express.Router();
 
 
 Router.get('/list', listSDb.listSell); 
-Router.get('/fetch', listSDb.fetchSell); 
+Router.post('/create', listSDb.newSell); 
+Router.post('/list/byId', listSDb.listById); 
 
 
 module.exports = Router
