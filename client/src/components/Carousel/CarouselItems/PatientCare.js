@@ -13,9 +13,9 @@ const PatientCare = (props) => {
             <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/Apt5.jpg" />
                     <Card.Body>
-                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Title>Windsor Hall</Card.Title>
                         <Card.Text>
-                            <h3>Patient Care</h3>
+                            <h3>15 Apartments available</h3>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -33,7 +33,7 @@ const PatientCare = (props) => {
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/room1.jpg" />
                     <Card.Body>
                         <Card.Text>
-                            <h3>Pediatric Neurosurgery</h3>
+                            <h3>3 Bed 2 Bath</h3>
                             {/* <p>
                                 From the most complex brain and spinal disorders requiring the most 
                                 challenging interventions to more common conditions and procedures, our 
@@ -51,11 +51,11 @@ const PatientCare = (props) => {
 
 
                 <Card style = {{margin: '20px'}} >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/room2.jpg" />
+                    <Card.Img className= "thePhoto" variant="top" src="/CarouselHome/PatientCare/room2.jpg" />
                     <Card.Body>
-                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Title>Featured</Card.Title>
                         <Card.Text>
-                            <h3>Patient Care</h3>
+                        <h3>1 Bed 1 Bath</h3>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -70,12 +70,12 @@ const PatientCare = (props) => {
                     </Card.Footer>
                 </Card>
 
-                <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
+                <Card style = {{margin: '20px'}, { marginRight: '50px' } } >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/apt3.jpg" />
                     <Card.Body>
-                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Title>The Landings</Card.Title>
                         <Card.Text>
-                            <h3>Patient Care</h3>
+                            <h3>10 Apartments available</h3>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -92,9 +92,9 @@ const PatientCare = (props) => {
                 <Card style = {{margin: '20px'}} >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/room3.jpg" />
                     <Card.Body>
-                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Title>Featured</Card.Title>
                         <Card.Text>
-                            <h3>Patient Care</h3>
+                            <h3>2 Bed 2 Bath</h3>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -111,9 +111,9 @@ const PatientCare = (props) => {
                 <Card style = {{margin: '20px'}} >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/room6.jpg" />
                     <Card.Body>
-                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Title></Card.Title>
                         <Card.Text>
-                            <h3>Patient Care</h3>
+                        <h3>3 Bed 2 Bath</h3>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -132,9 +132,9 @@ const PatientCare = (props) => {
                 <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/apt2.jpg" />
                     <Card.Body>
-                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Title>Integra Twenty Four</Card.Title>
                         <Card.Text>
-                            <h3>Patient Care</h3>
+                            <h3>0 Apartments available</h3>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -152,9 +152,9 @@ const PatientCare = (props) => {
                 <Card style = {{margin: '20px'}} >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/room5.jpeg" />
                     <Card.Body>
-                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Title>Featured</Card.Title>
                         <Card.Text>
-                            <h3>Patient Care</h3>
+                        <h3>4 Bed 2 Bath</h3>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -172,9 +172,9 @@ const PatientCare = (props) => {
                 <Card style = {{margin: '20px'}} >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/room4.jpeg" />
                     <Card.Body>
-                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Title></Card.Title>
                         <Card.Text>
-                            <h3>Patient Care</h3>
+                        <h3>2 Bed 2 Bath</h3>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -193,9 +193,9 @@ const PatientCare = (props) => {
                 <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/apt4.jpg" />
                     <Card.Body>
-                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Title>Oxford Manor</Card.Title>
                         <Card.Text>
-                            <h3>Patient Care</h3>
+                            <h3>6 Apartments available</h3>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -213,9 +213,9 @@ const PatientCare = (props) => {
                 <Card style = {{margin: '20px'}} >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/room7.jpeg" />
                     <Card.Body>
-                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Title></Card.Title>
                         <Card.Text>
-                            <h3>Patient Care</h3>
+                        <h3>1 Bed 1 Bath</h3>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -229,12 +229,12 @@ const PatientCare = (props) => {
                         </a> */}
                     </Card.Footer>
                 </Card>
-                <Card style = {{margin: '20px'}} >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/I2.jpg" />
+                <Card style = {{margin: '10px'}} >
+                    <Card.Img variant="top" src="/CarouselHome/PatientCare/room8.jpg" />
                     <Card.Body>
-                        <Card.Title>Neurosurgery</Card.Title>
+                        <Card.Title>Featured</Card.Title>
                         <Card.Text>
-                            <h3>Patient Care</h3>
+                        <h3>4 Bed 3 Bath</h3>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 

@@ -14,23 +14,23 @@ const NavBar = (props) => {
             <Navbar.Collapse>
                 <Nav className="flex-column" activeKey={props.option}>
                     <Nav.Link href='/Navigation/GeneralInformaiton' className = "nav-menu-item" eventKey={'GeneralInformaiton'}>
-                        General Information
+                        Profile
                     </Nav.Link>
 
                     <Nav.Link href='/Navigation/Parking' className = "nav-menu-item" eventKey={'Parking'}>
-                        Navigate Me to Parking
+                        Most Recent
                     </Nav.Link>
 
                     <Nav.Link href='/Navigation/Hospital' className = "nav-menu-item" eventKey={'Hospital'}>
-                        Navigate Me to Hospital
+                        Filters
                     </Nav.Link>
 
                     <Nav.Link href='/Navigation/Hospital' className = "nav-menu-item" eventKey={'Hospital'}>
-                        Navigate Me to Hospital
+                        Messenger
                     </Nav.Link>
 
                     <Nav.Link href='/Navigation/Hospital' className = "nav-menu-item" eventKey={'Hospital'}>
-                        Navigate Me to Hospital
+                        Help
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>

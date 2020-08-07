@@ -9,6 +9,11 @@
     overflow: visible;
 }
 
+.thePhoto{
+    height: 200px;
+    width: 275px;
+}
+
 #patient-care-title {
     font-size: 2rem;
     float: left;
