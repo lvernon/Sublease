@@ -2,7 +2,7 @@
 import React from 'react';
 import { CardDeck, Card, Container, Row, Col} from 'react-bootstrap'
 import './PatientCare.css'
-
+import room2 from '../../../assets/room2.jpg'
 /*
     Carousel slide for the "Patient Care" page
 */
@@ -57,7 +57,7 @@ const PatientCare = (props) => {
 
 
                 <Card style = {{margin: '20px'}} >
-                    <Card.Img as= "thePhoto" variant="top" src="/CarouselHome/PatientCare/room2.jpg" />
+                    <div className="thePhoto" style={{backgroundImage: `url(${room2})`}}/>
                     <Card.Body>
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
