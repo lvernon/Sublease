@@ -1,7 +1,9 @@
 import React from 'react'
 import './GeneralInformation.css'
-import { CardDeck, Card, Button } from 'react-bootstrap'
+import { CardDeck, Card, Button, Nav } from 'react-bootstrap'
 import { Image } from 'react-bootstrap'
+import comm from '../../../assets/commSection.png'
+import { Route, Switch, useParams } from 'react-router-dom';
 
 /*
     General information section on the navigation page. Displays static information about
@@ -53,8 +55,9 @@ function GeneralInformation(props) {
                 
                 </p>
             </div>
-            <img src="client/public/commSection.png" height="40px" alt=""></img>
-            <Image src="client/public/commSection.png" fluid />
+            <Nav.Link className = "offer-button" href='/Negotiation'> + Make an Offer</Nav.Link>
+
+            <div style={{backgroundImage: `url(${comm})`, width: '700px', height: 'auto'}}/>
 
             
         </div>

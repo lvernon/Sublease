@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { CardDeck, Card, Container, Row, Col} from 'react-bootstrap'
+import { CardDeck, Card, Container, Row, Col, Nav} from 'react-bootstrap'
 import './PatientCare.css'
 
 import room1 from '../../../assets/room1.jpg'
@@ -54,7 +54,7 @@ const PatientCare = (props) => {
                     <div className="thePhoto" style={{backgroundImage: `url(${room3})`}}/>
                     <Card.Body>
                         <Card.Text>
-                            <h3>3 Bed 2 Bath</h3>
+                        <Nav.Link className = "h3" href='/Navigation/GeneralInformaiton'> 3 Bed 2 Bath</Nav.Link>
                             <h4>Monthly Rent: $500</h4>
                             <h5>Discount: No application fee</h5>
                             
@@ -141,6 +141,7 @@ const PatientCare = (props) => {
                     <Card.Body>
                         <Card.Title></Card.Title>
                         <Card.Text>
+
                         <h3>3 Bed 2 Bath</h3>
                         <h4>Monthly Rent: $500</h4>
                         <h5>Discount: No pet fee</h5>
