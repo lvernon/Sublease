@@ -17,7 +17,7 @@ export default function MessageList(props) {
     getMessages();
   },[])
 
- function createBody (listing) {
+ /*function createBody (listing) {
     let bod ="";
 let match = null;
 let ID = listing.listCompId;
@@ -35,8 +35,8 @@ let ID = listing.listCompId;
      match = listings.slice(0);
   });
       bod = 
-      `Original Rent: $ ${(match.rentPerMonth).toString()} \n
-      Rent Discount: $    ${(match.rentPerMonth-listing.rentPerMonth).toString()}    \n   
+      `Original Rent: '$ ${(match.rentPerMonth).toString()} \n
+      RentDiscount: '$    ${(match.rentPerMonth-listing.rentPerMonth).toString()}    \n   
        New Rent: $   ${(listing.rentPerMonth).toString()}  \n\n   
 
        Original Application Fee: $   ${(match.applicationFee).toString()}   \n   
@@ -64,11 +64,11 @@ let ID = listing.listCompId;
          msgsA= (response.data);
          msgsA.map(result => {
 
-          /* { id: result.data.listCompId,
+          { id: result.data.listCompId,
            author: result.data.name,
            message: 'hello',
             timeStamp: new Date().getTime(),
-           }*/
+           }
            msgs.push(msgs);
           });
         })
@@ -76,7 +76,33 @@ let ID = listing.listCompId;
             setMessages([...messages, ...msgs])
           })
      
-  }
+  }*/
+  const getMessages = () => {
+  var tempMessages = [
+    {
+      id: 1,
+      author: 'apple',
+      message: {OriginalRent: '$1200' , RentDiscount: '$100'   ,   NewRent: '$1100'    , OriginalApplicationFee: '$50' , ApplicationFeeDiscount: '$0'      ,   NewApplicationFee: '$50'  ,   OriginalDeposit: '$250'    ,   DepositDiscount: '$0'     ,  NewDeposit: '$250'   ,   OriginalLeaseTransferFee: '$300'   ,   LeaseTransferFeeDiscount: '$300'    ,   NewLeaseTransferFee: '$0'     ,   MonthsFree: '0'  ,   Utilities: 'Not included'},
+      othertext: "Counteroffer: ",
+      timestamp: new Date().getTime()
+    },
+    {
+      id: 2,
+      author: 'orange',
+      message: {OriginalRent: '$1200' , RentDiscount: '$0'  ,   NewRent: '$1200'    , OriginalApplicationFee: '$50' , ApplicationFeeDiscount: '$0'      ,   NewApplicationFee: '$50'  ,   OriginalDeposit: '$250'    ,   DepositDiscount: '$0'     ,  NewDeposit: '$250'   ,   OriginalLeaseTransferFee: '$300'   ,   LeaseTransferFeeDiscount: '$300'    ,   NewLeaseTransferFee: '$0'     ,   MonthsFree: '1'  ,   Utilities: 'Included'},
+      othertext: "Offer:  ",
+      timestamp: new Date().getTime()
+    },
+    {
+      id: 3,
+      author: 'apple',
+      message: {OriginalRent: '$1200'  , RentDiscount: '$120'   ,   NewRent: '$1080'    , OriginalApplicationFee: '$50' , ApplicationFeeDiscount: '$0'      ,   NewApplicationFee: '$50'  ,   OriginalDeposit: '$250'    ,   DepositDiscount: '$0'     ,  NewDeposit: '$250'   ,   OriginalLeaseTransferFee: '$300'   ,   LeaseTransferFeeDiscount: '$300'    ,   NewLeaseTransferFee: '$0'     ,   MonthsFree: '0'  ,   Utilities: 'Included'},
+      othertext: "Counteroffer: ",
+      timestamp: new Date().getTime()
+    },
+  ]
+  setMessages([...messages, ...tempMessages])
+}
 
   const renderMessages = () => {
     let i = 0;
@@ -140,24 +166,17 @@ let ID = listing.listCompId;
     return(
       <div className="message-list">
         <Toolbar
-          title="Conversation Title"
-          rightItems={[
+rightItems={[
             <ToolbarButton key="info" icon="ion-ios-information-circle-outline" />,
             <ToolbarButton key="video" icon="ion-ios-videocam" />,
             <ToolbarButton key="phone" icon="ion-ios-call" />
           ]}
         />
 
-        <div className="message-list-container">{renderMessages()}</div>
+        <div className="message-list-container">{renderMessages()} 
+        <Compose/>
+        </div>
 
-        <Compose rightItems={[
-          <ToolbarButton key="photo" icon="ion-ios-camera" />,
-          <ToolbarButton key="image" icon="ion-ios-image" />,
-          <ToolbarButton key="audio" icon="ion-ios-mic" />,
-          <ToolbarButton key="money" icon="ion-ios-card" />,
-          <ToolbarButton key="games" icon="ion-logo-game-controller-b" />,
-          <ToolbarButton key="emoji" icon="ion-ios-happy" />
-        ]}/>
       </div>
     );
 }

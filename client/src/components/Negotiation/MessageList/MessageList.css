@@ -1,4 +1,6 @@
 .message-list-container {
   padding: 10px;
   padding-bottom: 70px;
+  background-color: white;
+  width: 100%;
 }

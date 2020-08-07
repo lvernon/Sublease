@@ -2,6 +2,7 @@ import React from 'react';
 import ConversationList from '../ConversationList';
 import MessageList from '../MessageList';
 import './Messenger.css';
+import Compose from '../Compose';
 
 export default function Messenger(props) {
     return (
@@ -26,12 +27,16 @@ export default function Messenger(props) {
         /> */}
 
         <div className="scrollable sidebar">
+          Messages
           <ConversationList />
         </div>
 
         <div className="scrollable content">
+          Negotiation
           <MessageList />
         </div>
-      </div>
+        
+        </div>
+         
     );
 }

@@ -1,10 +1,8 @@
 .compose {
   padding: 10px;
-  display: flex;
   align-items: center;
   background: white;
   border-top: 1px solid #eeeef1;
-  position: fixed;
   bottom: 0px;
 }
 

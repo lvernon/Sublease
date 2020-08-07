@@ -12,7 +12,7 @@ const offerSchema = new mongoose.Schema({
     monthsFree:  Number,
     utilitiesIncluded:Boolean,
     accepted:Boolean
-});
+}, { collection : 'offer' });
 
 
-module.exports = mongoose.model('offerDB', offerSchema, 'offer');
+module.exports = mongoose.model('offerDB', offerSchema);

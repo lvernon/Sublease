@@ -17,11 +17,11 @@ const listSellSchema = new mongoose.Schema({
     deposit:  Number,
     leaseTransferFee:  Number,
     applicationFee:  Number,
-    availabilityStart:Date,
+    availabilityStart: Date,
     availabilityEnd: Date,
-    description: String,
-});
+    description: String
+},{ collection : 'listingsSeller' });
 
 
-module.exports = mongoose.model('listSDB', listSellSchema, 'listingsSeller');
+module.exports = mongoose.model('listSDB', listSellSchema);
 
