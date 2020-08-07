@@ -18,21 +18,24 @@ const NavBar = (props) => {
             <Navbar id="main-navbar" variant="dark" expand="md" style={{margin:'0', "backgroundColor": "#072b55", height: '100%'}}>
                 {!props.home &&
                     <a href="/">
-                        <img src="/ufhealth-white.svg" style={{float: 'left', height: '30px',width: 'auto', 'maxHeight': '100%', 'margin': '0px 0px 10px 20px'}} alt=""></img>
+                        <img src="/ApartmentLogo.png" style={{float: 'left', height: '30px',width: 'auto', 'maxHeight': '100%', 'margin': '0px 0px 10px 20px'}} alt=""></img>
                     </a>
                 }
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="w-100 dual-collapse2">
                     <Nav className="mr-auto">
-                        <Nav.Link className = "nav-item main" href='/Negotiation'>Negotiation</Nav.Link>
-                        <Nav.Link className = "nav-item main" href='/Home'>Home</Nav.Link>
-                        {(props.currentUser && !props.isAdmin) &&
+
+                    <Nav.Link className = "nav-item main" href='/Navigation/GeneralInformaiton'>Home</Nav.Link>
+
+                        <Nav.Link className = "nav-item main" href='/Home'>Listings</Nav.Link>
+                        {/* {(props.currentUser && !props.isAdmin) &&
                             <Nav.Link className = "nav-item main" href='/MyAppointments'>Appointments</Nav.Link>
                         }
                         {(!props.currentUser) &&
                             <Nav.Link className = "nav-item main" href='/SignIn'>Appointments</Nav.Link>
-                        }
-                        <Nav.Link className = "nav-item main" href='/Navigation/GeneralInformaiton'>Contact and Find Us</Nav.Link>
+                        } */}
+                        <Nav.Link className = "nav-item main" href='/Negotiation'>Negotiation</Nav.Link>
+                        
                     </Nav>
                 </Navbar.Collapse>
                 <Navbar.Collapse className="w-100 dual-collapse2">

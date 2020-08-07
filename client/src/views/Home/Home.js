@@ -14,10 +14,10 @@ function Home(props) {
             <div id="home-header">
                 <div>
                 <a href="/" style={{'textAlign': 'center', 'display': 'block'}}>
-                    <img src="/ufhealth-white.svg" height="40px" alt=""></img>
+                    <img src="/ApartmentLogo.png" height="40px" alt=""></img>
                 </a>
                 </div>
-                <h1 id="department-title">UF Department of Neurosurgery</h1>
+                {/* <h1 id="department-title">Apartment List</h1> */}
             </div>
             <div style={{'min-height': '100vh', display: 'flex', 'flexDirection': 'column', 'justifyContent': 'space-between'}}>
                 <NavBar 
