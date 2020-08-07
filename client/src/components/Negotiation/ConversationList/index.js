@@ -4,7 +4,10 @@ import ConversationListItem from '../ConversationListItem';
 import Toolbar from '../Toolbar';
 import ToolbarButton from '../ToolbarButton';
 import axios from 'axios';
-import health from '../../../assets/UFhealth.png'
+import woman1 from '../../../assets/woman1.jpg'
+import woman2 from '../../../assets/woman2.jpg'
+import man1 from '../../../assets/man1.jpg'
+import man2 from '../../../assets/man2.jpg'
 
 import './ConversationList.css';
 
@@ -17,21 +20,21 @@ export default function ConversationList(props) {
  const getConversations = () => {
         let newConversations = [
             {
-            photo: health,
+            photo: man1,
             name: 'John Smith',
             text: 'Counteroffer recieved'}, 
             {
-              photo: health,
+              photo: woman2,
               name: 'Jennifer Lim',
               text: 'Counteroffer recieved'
             },
             {
-              photo: health,
+              photo: woman1,
               name: 'Michelle Watts',
               text: 'You sent an offer'
             },
             {
-              photo: health,
+              photo: man2,
               name: 'Gary Wright',
               text: 'You sent an offer'
             }
@@ -41,15 +44,6 @@ export default function ConversationList(props) {
 
     return (
       <div className="conversation-list">
-        <Toolbar
-          title="Messenger"
-          leftItems={[
-            <ToolbarButton key="cog" icon="ion-ios-cog" />
-          ]}
-          rightItems={[
-            <ToolbarButton key="add" icon="ion-ios-add-circle-outline" />
-          ]}
-        />
         <ConversationSearch />
         {
           conversations.map(conversation =>

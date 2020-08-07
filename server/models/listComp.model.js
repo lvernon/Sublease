@@ -17,7 +17,7 @@ const listCompSchema = new mongoose.Schema({
     applicationDiscount: {type: Number},
     depositDiscount: {type: Number},
     giftCard: {type: Number},
-});
+},  { collection : 'listingsCompany' });
 
 
-module.exports = mongoose.model('listCDB', listCompSchema, 'listingsCompany');
+module.exports = mongoose.model('listCDB', listCompSchema);
