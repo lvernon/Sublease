@@ -2,7 +2,25 @@
 import React from 'react';
 import { CardDeck, Card, Container, Row, Col} from 'react-bootstrap'
 import './PatientCare.css'
-import room2 from '../../../assets/room2.jpg'
+
+import room1 from '../../../assets/room1.jpg'
+import room2 from '../../../assets/room3.jpg'
+import room3 from '../../../assets/room2.jpg'
+import room4 from '../../../assets/room4.jpeg'
+import room5 from '../../../assets/room5.jpeg'
+import room6 from '../../../assets/room6.jpg'
+import room7 from '../../../assets/room7.jpeg'
+import room8 from '../../../assets/room8.jpg'
+import room11 from '../../../assets/room11.jpg'
+import room12 from '../../../assets/room12.jpeg'
+
+import apt1 from '../../../assets/apt1.jpg'
+import apt2 from '../../../assets/apt2.jpg'
+import apt3 from '../../../assets/apt3.jpg'
+import apt4 from '../../../assets/apt4.jpg'
+import Apt5 from '../../../assets/Apt5.jpg'
+
+
 /*
     Carousel slide for the "Patient Care" page
 */
@@ -14,7 +32,7 @@ const PatientCare = (props) => {
             <CardDeck id="patient-care-carddeck">
                 <Row>
             <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/Apt5.jpg" />
+            <div className="thePhoto" style={{backgroundImage: `url(${apt1})`}}/>
                     <Card.Body>
                         <Card.Title>Windsor Hall</Card.Title>
                         <Card.Text>
@@ -33,7 +51,7 @@ const PatientCare = (props) => {
                     </Card.Footer>
                 </Card>
                 <Card style = {{margin: '20px'}} >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/room1.jpg" />
+                    <div className="thePhoto" style={{backgroundImage: `url(${room3})`}}/>
                     <Card.Body>
                         <Card.Text>
                             <h3>3 Bed 2 Bath</h3>
@@ -79,7 +97,7 @@ const PatientCare = (props) => {
                         </Row>
                         <Row>
                 <Card style = {{margin: '20px'}, { marginRight: '50px' } } >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/apt3.jpg" />
+                <div className="thePhoto" style={{backgroundImage: `url(${apt2})`}}/>
                     <Card.Body>
                         <Card.Title>The Landings</Card.Title>
                         <Card.Text>
@@ -98,7 +116,7 @@ const PatientCare = (props) => {
                     </Card.Footer>
                 </Card>
                 <Card style = {{margin: '20px'}} >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/room3.jpg" />
+                <div className="thePhoto" style={{backgroundImage: `url(${room5})`}}/>
                     <Card.Body>
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
@@ -119,7 +137,7 @@ const PatientCare = (props) => {
                     </Card.Footer>
                 </Card>
                 <Card style = {{margin: '20px'}} >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/room6.jpg" />
+                <div className="thePhoto" style={{backgroundImage: `url(${room6})`}}/>
                     <Card.Body>
                         <Card.Title></Card.Title>
                         <Card.Text>
@@ -143,7 +161,7 @@ const PatientCare = (props) => {
                 </Row>
                 <Row>
                 <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/apt2.jpg" />
+                <div className="thePhoto" style={{backgroundImage: `url(${apt3})`}}/>
                     <Card.Body>
                         <Card.Title>Integra Twenty Four</Card.Title>
                         <Card.Text>
@@ -163,7 +181,7 @@ const PatientCare = (props) => {
                 </Card>
 
                 <Card style = {{margin: '20px'}} >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/room5.jpeg" />
+                <div className="thePhoto" style={{backgroundImage: `url(${room8})`}}/>
                     <Card.Body>
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
@@ -185,7 +203,7 @@ const PatientCare = (props) => {
                 </Card>
 
                 <Card style = {{margin: '20px'}} >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/room4.jpeg" />
+                <div className="thePhoto" style={{backgroundImage: `url(${room11})`}}/>
                     <Card.Body>
                         <Card.Title></Card.Title>
                         <Card.Text>
@@ -209,7 +227,7 @@ const PatientCare = (props) => {
                 </Row>
                 <Row>
                 <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/apt4.jpg" />
+                <div className="thePhoto" style={{backgroundImage: `url(${apt4})`}}/>
                     <Card.Body>
                         <Card.Title>Oxford Manor</Card.Title>
                         <Card.Text>
@@ -229,7 +247,7 @@ const PatientCare = (props) => {
                 </Card>
 
                 <Card style = {{margin: '20px'}} >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/room7.jpeg" />
+                <div className="thePhoto" style={{backgroundImage: `url(${room12})`}}/>
                     <Card.Body>
                         <Card.Title></Card.Title>
                         <Card.Text>
@@ -249,7 +267,7 @@ const PatientCare = (props) => {
                     </Card.Footer>
                 </Card>
                 <Card style = {{margin: '10px'}} >
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/room8.jpg" />
+                <div className="thePhoto" style={{backgroundImage: `url(${room11})`}}/>
                     <Card.Body>
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>

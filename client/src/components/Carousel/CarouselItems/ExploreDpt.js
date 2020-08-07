@@ -2,6 +2,31 @@ import React from 'react';
 import { CardDeck, Card, Button } from 'react-bootstrap'
 import './ExploreDpt.css'
 
+
+
+
+
+import room1 from '../../../assets/room1.jpg'
+import room2 from '../../../assets/room3.jpg'
+import room3 from '../../../assets/room2.jpg'
+import room4 from '../../../assets/room4.jpeg'
+import room5 from '../../../assets/room5.jpeg'
+import room6 from '../../../assets/room6.jpg'
+import room7 from '../../../assets/room7.jpeg'
+import room8 from '../../../assets/room8.jpg'
+import room11 from '../../../assets/room11.jpg'
+import room12 from '../../../assets/room12.jpeg'
+
+import apt1 from '../../../assets/apt1.jpg'
+import apt2 from '../../../assets/apt2.jpg'
+import apt3 from '../../../assets/apt3.jpg'
+import apt4 from '../../../assets/apt4.jpg'
+import Apt5 from '../../../assets/Apt5.jpg'
+
+
+
+
+
 /*
     Carousel slide for the "Explore Department" page
 */
@@ -11,7 +36,7 @@ const ExploreDpt = (props) => {
             <h2 id="explore-dpt-title">More Options</h2>
             <CardDeck id="explore-dpt-carddeck">
             <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
-                    <Card.Img className= "anotherPhoto" variant="top" src="/CarouselHome/PatientCare/apt1.jpg" />
+            <div className="thePhoto" style={{backgroundImage: `url(${Apt5})`}}/>
                     <Card.Body>
                         <Card.Title>Evergreen Uptown</Card.Title>
                         <Card.Text>
@@ -27,7 +52,7 @@ const ExploreDpt = (props) => {
                     </Card.Body>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/room11.jpg" />
+                <div className="thePhoto" style={{backgroundImage: `url(${room4})`}}/>
                     <Card.Body>
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
@@ -48,7 +73,7 @@ const ExploreDpt = (props) => {
 
 
                 <Card>
-                    <Card.Img variant="top" src="/CarouselHome/PatientCare/room12.jpeg" />
+                <div className="thePhoto" style={{backgroundImage: `url(${room7})`}}/>
                     <Card.Body>
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
