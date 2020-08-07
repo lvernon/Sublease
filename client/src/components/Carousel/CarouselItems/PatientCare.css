@@ -17,6 +17,12 @@
     margin-left: 15px;
 }
 
+.thePhoto{
+    height: 200px;
+    width: 275px;
+}
+
+
 #patient-care-container {
     width: 100%;
     height: 100%;

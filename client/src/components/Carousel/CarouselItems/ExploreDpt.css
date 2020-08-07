@@ -9,6 +9,11 @@
     overflow: visible;
 }
 
+.anotherPhoto{
+
+    height: 200px;
+}
+
 #explore-dpt-title {
     font-size: 2rem;
     float: left;
