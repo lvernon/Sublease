@@ -38,3 +38,7 @@
         padding: 0px 10px;
     }
 }
+
+.image {
+    max-height: 200px;
+}
