@@ -35,6 +35,9 @@ const PatientCare = (props) => {
                     <Card.Body>
                         <Card.Text>
                             <h3>3 Bed 2 Bath</h3>
+                            <h4>Monthly Rent: $500</h4>
+                            <h5>Discount: No application fee</h5>
+                            
                             {/* <p>
                                 From the most complex brain and spinal disorders requiring the most 
                                 challenging interventions to more common conditions and procedures, our 
@@ -57,6 +60,7 @@ const PatientCare = (props) => {
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
                         <h3>1 Bed 1 Bath</h3>
+                        <h4>Monthly Rent: $550</h4>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -96,6 +100,8 @@ const PatientCare = (props) => {
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
                             <h3>2 Bed 2 Bath</h3>
+                            <h4>Monthly Rent: $450</h4>
+                            <h5>Discount: Prorated security deposit</h5>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -115,6 +121,8 @@ const PatientCare = (props) => {
                         <Card.Title></Card.Title>
                         <Card.Text>
                         <h3>3 Bed 2 Bath</h3>
+                        <h4>Monthly Rent: $500</h4>
+                        <h5>Discount: No pet fee</h5>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -156,6 +164,8 @@ const PatientCare = (props) => {
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
                         <h3>4 Bed 2 Bath</h3>
+                        <h4>Monthly Rent: $480</h4>
+                        <h5>Discount: No pet fee</h5>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -176,6 +186,8 @@ const PatientCare = (props) => {
                         <Card.Title></Card.Title>
                         <Card.Text>
                         <h3>2 Bed 2 Bath</h3>
+                        <h4>Monthly Rent: $500</h4>
+                        <h5>Discount: First month free</h5>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -217,6 +229,7 @@ const PatientCare = (props) => {
                         <Card.Title></Card.Title>
                         <Card.Text>
                         <h3>1 Bed 1 Bath</h3>
+                        <h4>Monthly Rent: $450</h4>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 
@@ -236,6 +249,8 @@ const PatientCare = (props) => {
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
                         <h3>4 Bed 3 Bath</h3>
+                        <h4>Monthly Rent: $500</h4>
+                        <h5>Discount: No application fee</h5>
                             {/* <p>
                                 The physicians of the clinical faculty of the Department of Neurosurgery at the 
                                 University of Florida provide outstanding care for patients with neurological 

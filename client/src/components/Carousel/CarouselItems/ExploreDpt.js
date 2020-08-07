@@ -32,6 +32,8 @@ const ExploreDpt = (props) => {
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
                             <h3>2 Bed 2 Bath</h3>
+                            <h4>Monthly Rent: $500</h4>
+                            <h5>Discount: No application fee</h5>
                             {/* <p>
                                 Faculty of the Department of Neurosurgery collaborate with basic scientists to seek new 
                                 cures for neurologic illness through research.
@@ -51,6 +53,8 @@ const ExploreDpt = (props) => {
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
                             <h3>1 Bed 1 Bath</h3>
+                            <h4>Monthly Rent: $650</h4>
+                            <h5>Discount: Prorated security deposit</h5>
                             {/* <p>
                                 We are an ACGME-accredited neurosurgery residency program with 3 residents per year.
                             </p>  */}
