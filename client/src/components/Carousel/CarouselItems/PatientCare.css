@@ -18,8 +18,7 @@
 }
 
 .thePhoto{
-    height: 200px;
-    width: 275px;
+    background-image: cover;
 }
 
 

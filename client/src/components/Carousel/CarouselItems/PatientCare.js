@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { CardDeck, Card } from 'react-bootstrap'
+import { CardDeck, Card, Container, Row, Col} from 'react-bootstrap'
 import './PatientCare.css'
 
 /*
@@ -10,7 +10,9 @@ const PatientCare = (props) => {
     return (
         <div id="patient-care-container">
             <h2 id="patient-care-title">Today's Picks for You</h2>
+            <Container>
             <CardDeck id="patient-care-carddeck">
+                <Row>
             <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/Apt5.jpg" />
                     <Card.Body>
@@ -55,7 +57,7 @@ const PatientCare = (props) => {
 
 
                 <Card style = {{margin: '20px'}} >
-                    <Card.Img className= "thePhoto" variant="top" src="/CarouselHome/PatientCare/room2.jpg" />
+                    <Card.Img as= "thePhoto" variant="top" src="/CarouselHome/PatientCare/room2.jpg" />
                     <Card.Body>
                         <Card.Title>Featured</Card.Title>
                         <Card.Text>
@@ -74,7 +76,8 @@ const PatientCare = (props) => {
                         </a> */}
                     </Card.Footer>
                 </Card>
-
+                        </Row>
+                        <Row>
                 <Card style = {{margin: '20px'}, { marginRight: '50px' } } >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/apt3.jpg" />
                     <Card.Body>
@@ -137,7 +140,8 @@ const PatientCare = (props) => {
                     </Card.Footer>
                 </Card>
 
-
+                </Row>
+                <Row>
                 <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/apt2.jpg" />
                     <Card.Body>
@@ -202,7 +206,8 @@ const PatientCare = (props) => {
                     </Card.Footer>
                 </Card>
 
-
+                </Row>
+                <Row>
                 <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
                     <Card.Img variant="top" src="/CarouselHome/PatientCare/apt4.jpg" />
                     <Card.Body>
@@ -265,8 +270,9 @@ const PatientCare = (props) => {
                     </Card.Footer>
                 </Card>
 
-                
+                </Row>
             </CardDeck>
+            </Container>
         </div>
     );
 }
