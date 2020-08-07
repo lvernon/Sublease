@@ -10,7 +10,6 @@ const HomeCarousel = (props) => {
     return (
         <div id="home-container">
             <PatientCare /> 
-            <ExploreDpt />
             <ExploreDpt /> 
         </div>
     );

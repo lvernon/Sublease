@@ -10,7 +10,7 @@ const ExploreDpt = (props) => {
         <div id="explore-dpt-container">
             <h2 id="explore-dpt-title">More Options</h2>
             <CardDeck id="explore-dpt-carddeck">
-                <Card>
+            <Card style = {{margin: '20px'}, { marginRight: '80px' } } >
                     <Card.Img variant="top" src="/CarouselHome/ExploreDpt/I1.jpg" />
                     <Card.Body>
                         <Card.Title>Neurosurgery Residency</Card.Title>
